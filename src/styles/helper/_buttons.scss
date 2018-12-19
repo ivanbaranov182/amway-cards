@@ -1,0 +1,35 @@
+.button {
+	padding: 0px 20px;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 20px;
+	background: #F02757;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	&._red {
+		width: 128px;
+	}
+	&._green {
+		background: #0EA413;
+		width: 166.46px;
+	}
+	&._transparent {
+		//width: 174.63px;
+		width: 214.63px;
+		border: 1px solid #2F3DB0;
+		color: #2F3DB0;
+		background: none;
+	}
+	&._blue {
+		width: 40.78px;
+		height: 39.68px;
+		background: #2F3DB0;
+		margin-left: 20px;
+		& img {
+			left: -10px;
+			top: 5px;
+		}
+	}
+
+}

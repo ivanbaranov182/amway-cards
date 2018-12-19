@@ -1,0 +1,155 @@
+.cards {
+	margin-bottom: 36px;
+	@include adaptive(380) {
+		margin-bottom: 26px;
+	}
+	&__title {
+		margin-bottom: 26px;
+		font-size: 34px;
+		letter-spacing: -1px;
+		color: #1A345C;
+		@include adaptive(380) {
+			margin-bottom: 18px;
+		}
+		&._small {
+			margin-bottom: 8px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #14215D;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 23%;
+		overflow: hidden;
+		cursor: pointer;
+		color: #D8371F;
+		@include adaptive(600) {
+			width: 48%;
+			margin-bottom: 20px;
+		}
+		@include adaptive(380) {
+			margin-bottom: 10px;
+		}
+		@include adaptive(350) {
+			margin-bottom: 0px;
+		}
+		&:nth-child(2) {
+			color: #2858C6;
+			& .cards__image {
+				height: 319.1px;
+				margin-bottom: 19px;
+				@include adaptive(900) {
+					height: 270px;
+					margin-bottom: 10px;
+				}
+				@include adaptive(600) {
+					height: 319.1px;
+				}
+				@include adaptive(520) {
+					height: 218.75px;
+				}
+				@include adaptive(350) {
+					height: 188.75px;
+				}
+			}
+		}
+		&:nth-child(3) {
+			color: #F49C00;
+			@include adaptive(600) {
+				margin-top: -45px;
+			}
+			@include adaptive(520) {
+				margin-top: -32px;
+			}
+			@include adaptive(350) {
+				margin-top: -26px;
+			}
+			& .cards__image {
+				height: 319.1px;
+				margin-bottom: 19px;
+				@include adaptive(900) {
+					height: 270px;
+					margin-bottom: 10px;
+				}
+				@include adaptive(600) {
+					height: 319.1px;
+				}
+				@include adaptive(520) {
+					height: 218.75px;
+				}
+				@include adaptive(350) {
+					height: 188.75px;
+				}
+			}
+		}
+		&:nth-child(4) {
+			color: #dd4f77;
+			& .cards__image {
+				margin-bottom: 22px;
+				//height: 230px;
+				@include adaptive(900) {
+					margin-bottom: 10px;
+				}
+				@include adaptive(600) {
+					height: 273.5px;
+				}
+				@include adaptive(520) {
+					height: 187.5px;
+				}
+			}
+		}
+	}
+	&__image {
+		display: block;
+		height: 273.5px;
+		margin-bottom: 14px;
+		border-radius: 20px;
+		overflow: hidden;
+		padding-top: 56.25%;
+		background-size: cover;
+		@include adaptive(900) {
+			height: 230px;
+			margin-bottom: 10px;
+		}
+		@include adaptive(600) {
+			height: 273.5px;
+		}
+		@include adaptive(520) {
+			height: 187.5px;
+		}
+		&.play {
+			& img {
+				opacity: 0;
+			}
+		}
+		& img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: auto;
+			transition: opacity 0.3s;
+			@include adaptive(900) {
+				width: initial;
+			}
+			@include adaptive(600) {
+				width: 100%;
+			}
+		}
+	}
+	&__name {
+		font-size: 24px;
+		letter-spacing: -0.03em;
+		@include adaptive(900) {
+			font-size: 20px;
+		}
+		@include adaptive(600) {
+			display: none;
+		}
+	}
+}

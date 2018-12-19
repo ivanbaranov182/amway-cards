@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	position: relative;
+	outline: none;
+}
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+  	flex-direction: column;
+	min-width: 320px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: $mobile;
+	letter-spacing: 0.8px;
+	color: black;
+	&._open {
+		position: fixed;
+		left: 0;
+		overflow: hidden;
+		width: 100%;
+	}
+}
+
+body._overflow {
+	overflow: hidden;
+}
+
+header {
+	flex-shrink: 0;
+	/* IE fix */
+}
+
+main {
+	flex-shrink: 0;
+	/* IE fix */
+}
+
+body > div {
+	flex-shrink: 0;
+	/* IE fix */
+}
+
+footer {
+	flex-shrink: 0;
+	/* IE fix */
+	margin-top: auto;
+}
+
+a {
+	color: $black;
+	font-size: $mobile;
+	font-weight: 500;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a,
+label {
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+input[type=submit],
+input[type=text],
+textarea,
+button[type=button] {
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+svg {
+	transition: 0.3s;
+}
+
+.center {
+	width: 100%;
+	max-width: 1006px;
+	padding: 0 10px;
+	margin: 0 auto;
+	@include adaptive(600) {
+		padding: 0 24px;
+	}
+}
+
+.fancybox-slide>* {
+	padding: 5px;
+	background: none;
+}
+
+.more {
+	margin: 0 auto;
+	margin-bottom: 40px;
+}

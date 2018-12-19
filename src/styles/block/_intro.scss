@@ -1,0 +1,20 @@
+.intro {
+	max-width: 2048px;
+	height: 834px;
+	background: url(/images/intro.png);
+	@include adaptive(1440) {
+		height: 808px;
+		background: url(/images/intro1440.png);
+		background-size: cover;
+		background-position: center;
+	}
+	@include adaptive(800) {
+		height: 400px;
+		background-image: url(/images/intro1440.png);
+		background-size: cover;
+	}
+	@include adaptive(380) {
+		height: 375px;
+		background-image: url(/images/intro-mobile.png);
+	}
+}

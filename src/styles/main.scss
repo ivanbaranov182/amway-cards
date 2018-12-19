@@ -1,0 +1,22 @@
+@import "../libs/normalize.css";
+@import "../libs/fancybox/jquery.fancybox.min.css";
+
+
+@import "service/variables";
+@import "service/mixins";
+@import "service/fonts";
+
+//core
+@import "common/general";
+
+//helpers (inputs buttons)
+@import "helper/buttons";
+//block elements
+@import "element/modal";
+@import "element/preview";
+//blocks
+@import "block/header";
+@import "block/intro";
+@import "block/cards";
+@import "block/footer";
+// sass --sourcemap=none --no-cache --watch sass/main.scss:css/style.css --style expanded

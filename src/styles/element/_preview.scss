@@ -1,0 +1,39 @@
+.preview {
+	&__back {
+		display: block;
+		margin-left: 20px;
+		margin-top: 13px;
+		margin-bottom: 13px;
+		font-size: 10.4578px;
+		text-transform: uppercase;
+		color: #032F5E;
+		& img {
+			top: 3px;
+		}
+	}
+	&__image {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	&__actions {
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		margin-bottom: 22px;
+		font-size: 28px;
+		letter-spacing: -0.03em;
+		color: #1A345C;
+	}
+	&__text {
+		margin-bottom: 20px;
+		line-height: 20px;
+		font-size: 14px;
+		color: #14215D;
+	}
+	&__footer {
+		margin-bottom: 40px;
+		display: flex;
+	}
+}
