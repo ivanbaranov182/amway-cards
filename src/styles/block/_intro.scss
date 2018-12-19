@@ -1,6 +1,8 @@
 .intro {
 	max-width: 2048px;
 	height: 834px;
+	margin: 0 auto;
+	position: relative;
 	background: url(/images/intro.png);
 	background-position: center;
 	background-size: cover;
@@ -16,5 +18,27 @@
 	@include adaptive(380) {
 		height: 375px;
 		background-image: url(/images/intro-mobile.png);
+	}
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		width: 324px;
+		height: 868px;
+		position: absolute;
+		top: 172px;
+		background: #000;
+		background: linear-gradient(89.38deg, rgba(0, 0, 0, 0.1) -41.2%, rgba(0, 0, 0, 0) 25.46%);
+		z-index: 1;
+		@include adaptive(2060) {
+			display: none;
+		}
+	}
+	&:before {
+		left: -194px;
+		transform: rotate(-180deg);
+	}
+	&:after {
+		right: -324px;
 	}
 }
