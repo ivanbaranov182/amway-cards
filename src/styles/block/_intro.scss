@@ -2,11 +2,11 @@
 	max-width: 2048px;
 	height: 834px;
 	background: url(/images/intro.png);
+	background-position: center;
+	background-size: cover;
 	@include adaptive(1440) {
 		height: 808px;
-		background: url(/images/intro1440.png);
-		background-size: cover;
-		background-position: center;
+		background-image: url(/images/intro1440.png);
 	}
 	@include adaptive(800) {
 		height: 400px;
